@@ -13,7 +13,7 @@ public class Variable {
 	
 	//Q2 : 1개의 숫자를 입력하면, 그에 대응하는 ASCII 문자열을 출력하는 메소드를 작성하세요.
 	public static void Q2() {
-		
+		//여기에 코드를 작성하세요.
 	}
 
 	//main method
