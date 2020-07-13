@@ -11,8 +11,10 @@ public class Variable {
 		System.out.println("Not Problem Found.");
 	}
 	
-	//Q2 : 1개의 숫자를 입력하면, 그에 대응하는 ASCII 문자열을 출력하는 메소드를 작성하세요.
+	//Q2 : 1개의 숫자를 입력하면, 그에 대응하는 ASCII 문자열을 출력하는 메소드를 작성하세요.(아직 별도의 예외 처리는 필요 없습니다.)
+	//힌트 : char 형변환을 이용하세요.
 	public static void Q2() {
+		Scanner scanner = new Scanner(System.in);
 		//여기에 코드를 작성하세요.
 	}
 
