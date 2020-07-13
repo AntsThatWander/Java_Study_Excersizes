@@ -12,5 +12,5 @@ This is a repository for exercises and its answers for java study with my colleg
 If you want to know what the excersize is, see the comment for each method.   
 Each exercise is from the book's, 자바의 정석, or what I make.([Please refer to link](https://cafe.naver.com/javachobostudy))   
 If you think they have errors or you have nicer ones, please use Issue or Pull Request.   
-Or you could contact me with my email.
+Or you could contact me with my email.   
 Google : anubspider@gmail.com    

@@ -1,5 +1,3 @@
-package java_exercise;
-
 import java.util.Scanner;
 
 public class Operator_Condition_Loop {
