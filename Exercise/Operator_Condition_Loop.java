@@ -15,7 +15,7 @@ public class Operator_Condition_Loop {
 		System.out.print("Enter you input 1 to 3.");
 		//수를 담을 수 있는 tmp 변수
 		int tmp = scanner.nextInt();
-		//구분선
+		//구분선ddd
 		System.out.println("-----------------------------");
 		//여기에 코드를 작성하세요. 아래에 써진 문장들을 이용하세요.
 		//힌트 : 여기에서는 Switch문을 이용해야 합니다.
