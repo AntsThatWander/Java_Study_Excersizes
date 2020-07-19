@@ -57,7 +57,7 @@ public class Array_String {
 		
 	}
 	
-	//Q2. 문자열을 입력받아 암호화 시키는 메소드를 작성하세요.(참고 : 카이사르 암호라는 암호 체계입니다.)
+	//Q2. 문자열을 입력받아 암호화 시키고 출력하는 메소드를 작성하세요.(참고 : 카이사르 암호라는 암호 체계입니다.)
 	//예외처리는 무시하세요. 소문자 문장을 헷갈릴 수도 있기 때문에, 입력 문장을 대문자로 바꾸세요. toUpperCase()라는 메소드를 이용하세요.
 	//예시 : HELLOWORLD -> KHOORZRUOG
 	public void Q2() {
@@ -80,8 +80,6 @@ public class Array_String {
 		
 		//여기에 코드를 작성하세요.
 		
-		//출력
-		System.out.println(result);
 		sc.close();
 	}
 	
