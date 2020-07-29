@@ -69,7 +69,7 @@ public class Array_String {
 		
 		//암호화(엔코딩) 표 만들기
 		for(int i=0; i<ENCODER.length; i++) {
-			ENCODER[i] = (char)(i+'A'+key);
+			ENCODER[i] = (char)((i+key)%26+'a');
 		}
 		
 		//개행 문자 제거
