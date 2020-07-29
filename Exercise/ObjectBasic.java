@@ -144,7 +144,7 @@ class Q{
 	}
 	
 	//Stat getter. Stat을 리턴합니다.
-		public double getStat() {
+	public double getStat() {
 			return stat;
 		}
 	
