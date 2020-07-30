@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Array_String {
 	final char[] ENCODER = new char[26];
 	
-	//Q1. ì£¼ì–´ì§„ ë°°ì—´ì„ 90ë„ íšŒì „ì‹œì¼œ ì¶œë ¥í•˜ëŠ” ë©”ì†Œë“œë¥¼ ì‘ì„±í•˜ì„¸ìš”.
-	//ìë°”ì˜ ì •ì„ ì¶œì²˜ ë¬¸ì œì…ë‹ˆë‹¤.
+	//Q1. ÁÖ¾îÁø ¹è¿­À» 90µµ È¸Àü½ÃÄÑ Ãâ·ÂÇÏ´Â ¸Ş¼Òµå¸¦ ÀÛ¼ºÇÏ¼¼¿ä.
+	//ÀÚ¹ÙÀÇ Á¤¼® ÃâÃ³ ¹®Á¦ÀÔ´Ï´Ù.
 	public void Q1() {
-		//ê¸°ì¡´ ë°°ì—´
+		//±âÁ¸ ¹è¿­
 		int[][] original = {
 				{1,1,0,1},
 				{1,1,1,0},
@@ -22,16 +22,16 @@ public class Array_String {
 		// 1 0 0 1
 		// 0 0 0 1
 		
-		//90ë„ íšŒì „ì‹œí‚¬ ë°°ì—´. ëª¨ë“  ë‘ë²ˆì§¸ ë°°ì—´ì˜ ê¸¸ì´ê°€ ê°™ê¸° ë•Œë¬¸ì—, ëŒ€í‘œë¡œ 0ë²ˆ ì¸ë±ìŠ¤ì˜ ê¸¸ì´ë¥¼ ê°€ì ¸ì˜´.
+		//90µµ È¸Àü½ÃÅ³ ¹è¿­. ¸ğµç µÎ¹øÂ° ¹è¿­ÀÇ ±æÀÌ°¡ °°±â ¶§¹®¿¡, ´ëÇ¥·Î 0¹ø ÀÎµ¦½ºÀÇ ±æÀÌ¸¦ °¡Á®¿È.
 		int[][] result = new int[original[0].length][original.length];
 		
-		//ëª©í‘œ í–‰ë ¬
+		//¸ñÇ¥ Çà·Ä
 		// 0 1 0 1 1
 		// 0 0 0 1 1
 		// 0 0 1 1 0
 		// 1 1 1 0 1
 		
-		//ê¸°ì¡´ ë°°ì—´ ì¶œë ¥
+		//±âÁ¸ ¹è¿­ Ãâ·Â
 		System.out.println("Original Array is...");
 		for(int i=0; i<original.length; i++) {
 			for(int j=0; j<original[i].length; j++) {
@@ -40,14 +40,14 @@ public class Array_String {
 			System.out.println();
 		}
 		
-		//90ë„ íšŒì „
+		//90µµ È¸Àü
 		for(int i=0; i<original.length; i++) {
 			for(int j=0; j<original[0].length; j++) {
 				result[j][result.length-i] = original[i][j];
 			}
 		}
 		
-		//90ë„ ë°°ì—´ ì¶œë ¥
+		//90µµ ¹è¿­ Ãâ·Â
 		System.out.println("And Rotated Array is...");
 		for(int i=0; i<result.length; i++) {
 			for(int j=0; j<result[i].length; j++) {
@@ -59,41 +59,41 @@ public class Array_String {
 		
 	}
 	
-	//Q2. ë¬¸ìì—´ì„ ì…ë ¥ë°›ì•„ ì•”í˜¸í™” ì‹œí‚¤ëŠ” ë©”ì†Œë“œë¥¼ ì‘ì„±í•˜ì„¸ìš”.(ì°¸ê³  : ì¹´ì´ì‚¬ë¥´ ì•”í˜¸ë¼ëŠ” ì•”í˜¸ ì²´ê³„ì…ë‹ˆë‹¤.)
-	//ì˜ˆì™¸ì²˜ë¦¬ëŠ” ë¬´ì‹œí•˜ì„¸ìš”. ì†Œë¬¸ì ë¬¸ì¥ì„ í—·ê°ˆë¦´ ìˆ˜ë„ ìˆê¸° ë•Œë¬¸ì—, ê·¸ëƒ¥ ëŒ€ë¬¸ìë¡œ ë°”ê¿‰ë‹ˆë‹¤.
-	//ì˜ˆì‹œ : HELLOWORLD -> KHOORZRUOG
+	//Q2. ¹®ÀÚ¿­À» ÀÔ·Â¹Ş¾Æ ¾ÏÈ£È­ ½ÃÅ°´Â ¸Ş¼Òµå¸¦ ÀÛ¼ºÇÏ¼¼¿ä.(Âü°í : Ä«ÀÌ»ç¸£ ¾ÏÈ£¶ó´Â ¾ÏÈ£ Ã¼°èÀÔ´Ï´Ù.)
+	//¿¹¿ÜÃ³¸®´Â ¹«½ÃÇÏ¼¼¿ä. ¼Ò¹®ÀÚ ¹®ÀåÀ» Çò°¥¸± ¼öµµ ÀÖ±â ¶§¹®¿¡, ±×³É ´ë¹®ÀÚ·Î ¹Ù²ß´Ï´Ù.
+	//¿¹½Ã : HELLOWORLD -> KHOORZRUOG
 	public void Q2() {
-		//ì •ìˆ˜ ì…ë ¥ í™•ì¸
+		//Á¤¼ö ÀÔ·Â È®ÀÎ
 		System.out.print("Please enter the key : ");
-		//ë³€ìˆ˜-ì…ë ¥ ë° ì•”í˜¸í™”
+		//º¯¼ö-ÀÔ·Â ¹× ¾ÏÈ£È­
 		Scanner sc = new Scanner(System.in);
 		int key = sc.nextInt();
 		
-		//ì•”í˜¸í™”(ì—”ì½”ë”©) í‘œ ë§Œë“¤ê¸°
+		//¾ÏÈ£È­(¿£ÄÚµù) Ç¥ ¸¸µé±â
 		for(int i=0; i<ENCODER.length; i++) {
 			ENCODER[i] = (char)((i+key)%26+'a');
 		}
 		
-		//ê°œí–‰ ë¬¸ì ì œê±°
+		//°³Çà ¹®ÀÚ Á¦°Å
 		sc.nextLine();
 		
-		//ë¬¸ìì—´ ì…ë ¥ í™•ì¸
+		//¹®ÀÚ¿­ ÀÔ·Â È®ÀÎ
 		System.out.print("Please enter the string : ");
 		
-		//ë³€ìˆ˜-ì…ë ¥ ë¬¸ìì—´
+		//º¯¼ö-ÀÔ·Â ¹®ÀÚ¿­
 		String inputString = sc.nextLine();
 		String result = "";
 		
-		//ëŒ€ë¬¸ìë¡œ
+		//´ë¹®ÀÚ·Î
 		inputString = inputString.toUpperCase();
 		
-		//ì—”ì½”ë”© ê³¼ì •
+		//¿£ÄÚµù °úÁ¤
 		for(int i=0; i<inputString.length(); i++) {
 			char encoded = ENCODER[inputString.charAt(i)-'A'];
 			result += encoded;
 		}
 		
-		//ì¶œë ¥
+		//Ãâ·Â
 		System.out.println(result);
 		sc.close();
 	}
