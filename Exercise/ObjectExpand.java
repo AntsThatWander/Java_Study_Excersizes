@@ -22,7 +22,7 @@ public class ObjectExpand {
 }
 
 //전체적인 시스템은, Storage 인스터스가 Ingredient 인스턴스를 받은 후 각 Ingredient의 getReource() 반환값을 받아서 저장합니다.(store(Ingredient i))
-//만약, 해당 Ingredient 인스턴스가 Processable 하다면, process(Processable a, Processable b)를 호출합니다. 이때, Green과 Blue가 Processable 합니다.
+//만약, 해당 Ingredient 인스턴스가 Processable 하다면, process(Processable a)를 호출합니다. 이때, Green과 Blue가 Processable 합니다.
 //단, 해당 인스턴스의 quantity가 기준(BASIS)보다 적다면, getResource()에 맞는 양을 리턴해야 합니다.
 //Red, Green, Blue 이외의 다른 Ingredient 인스턴스는 받지 않습니다.
 
@@ -43,7 +43,7 @@ class Storage{
 
 	}
 	
-	//Q3. process(Processable a, Processable b) 메소드를 구현하세요. 실행 방식은 위 시스템을 참고하세요.
+	//Q3. process(Processable a) 메소드를 구현하세요. 실행 방식은 위 시스템을 참고하세요.
 	//Blue, Green만 받습니다.
 	private void process(Processable a) {
 	}
