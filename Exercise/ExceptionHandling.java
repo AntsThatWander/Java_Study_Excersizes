@@ -25,7 +25,7 @@ public class ExceptionHandling {
 		
 		for(int i=0; i<o.length; i++) {
 			System.out.println(o[0].toString());
-        }
+    	}
 		
 		Viewer.printEnd(1);
 		return endString;
@@ -42,7 +42,7 @@ public class ExceptionHandling {
 		int tmp2 = scan.nextInt();
 		System.out.println(tmp/tmp2);
 
-        scan.close();
+    	scan.close();
 		
 		Viewer.printEnd(2);
 		return endString;
