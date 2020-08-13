@@ -1,8 +1,8 @@
-//annotation은 지금까지 봤던 @Override 같은 거 보면 됩니다.
+//annotation�� ���ݱ��� �ô� @Override ���� �� ���� �˴ϴ�.
 public class GenericsNEnum {
 	
-	//main이 꽤 더럽지요? 이게 바로 Generics의 와일드 카드(wild card)를 쓰는 이유입니다.
-	//하지만 우리는 아직 그것까지 신경 쓸 단계가 아니니, 고생을 조금 해야 합니다.
+	//main�� �� ��������? �̰� �ٷ� Generics�� ���ϵ� ī��(wild card)�� ���� �����Դϴ�.
+	//������ �츮�� ���� �װͱ��� �Ű� �� �ܰ谡 �ƴϴ�, ������ ���� �ؾ� �մϴ�.
 	public static void main(String[] args) {
 		Glass glass = new Glass();
 		Box<Glass> glassBox = new Box<Glass>(glass);
@@ -23,16 +23,16 @@ public class GenericsNEnum {
 
 }
 
-//Q3. T 타입 변수를 갖는 Generic 클래스 Box를 완성하세요. 이때 T는 오직 Content를 상속받은 클래스에 한합니다. 다음의 요소를 갖습니다.
-//속성 - content. T 타입의 변수입니다.
-//생성자 - T 타입의 content 값을 받아서, 자신의 content에 저장합니다.
-//기능1. - getPrice(). content 내의 getPrice()와 content가 가지고 있는 태그의 가격과, content가 가지고 있는 Fee를 더해야 합니다.
-//기능2. - tagName(). content가 가지고 있는 tag의 이름을 반환합니다. Enum 클래스에 있는 name() 메소드를 활용하세요.
+//Q3. T Ÿ�� ������ ���� Generic Ŭ���� Box�� �ϼ��ϼ���. �̶� T�� ���� Content�� ��ӹ��� Ŭ������ ���մϴ�. ������ ��Ҹ� �����ϴ�.
+//�Ӽ� - content. T Ÿ���� �����Դϴ�.
+//������ - T Ÿ���� content ���� �޾Ƽ�, �ڽ��� content�� �����մϴ�.
+//���1. - getPrice(). content ���� getPrice()�� content�� ������ �ִ� �±��� ���ݰ�, content�� ������ �ִ� Fee�� ���ؾ� �մϴ�.
+//���2. - tagName(). content�� ������ �ִ� tag�� �̸��� ��ȯ�մϴ�. Enum Ŭ������ �ִ� name() �޼ҵ带 Ȱ���ϼ���.
 class Box<T extends Content>{
-	//여기에 코드를 작성하세요.
+	//���⿡ �ڵ带 �ۼ��ϼ���.
 }
 
-//Content 클래스. 잘 활용하세요.
+//Content Ŭ����. �� Ȱ���ϼ���.
 abstract class Content{
 	protected Tag tag;
 	private int price;
@@ -52,24 +52,24 @@ abstract class Content{
 	}
 }
 
-//Q2. 아래에 있는 Glass 클래스, Food 클래스, Figure 클래스를 구현하세요.
-//returnFee()는 택배비를 반환합니다. 순서대로 3000, 1500, 2500 입니다.
-//tag는 생성 시에 각각 클래스에 부여됩니다.
+//Q2. �Ʒ��� �ִ� Glass Ŭ����, Food Ŭ����, Figure Ŭ������ �����ϼ���.
+//returnFee()�� �ù�� ��ȯ�մϴ�. ������� 3000, 1500, 2500 �Դϴ�.
+//tag�� ���� �ÿ� ���� Ŭ������ �ο��˴ϴ�.
 class Glass extends Content{
-    //여기에 코드를 작성하세요.
+    //���⿡ �ڵ带 �ۼ��ϼ���.
 }
 
 class Food extends Content{
-	//여기에 코드를 작성하세요.
+	//���⿡ �ڵ带 �ۼ��ϼ���.
 }
 
 class Figure extends Content{
-    //여기에 코드를 작성하세요.
+    //���⿡ �ڵ带 �ۼ��ϼ���.
 }
 
-//Q1. enum을 완성하세요. 이때 상수는 FRAGILE, QUICK, SIDE고, 각각 취급 주의, 빠른 배송, 상하 주의입니다.
-//각 태그에는 price라는 값이 필요합니다. 각각 100, 80, 50 입니다.
-//그리고 해당 price를 반환하는 getPrice()를 구현하세요.
+//Q1. enum�� �ϼ��ϼ���. �̶� ����� FRAGILE, QUICK, SIDE��, ���� ��� ����, ���� ���, ���� �����Դϴ�.
+//�� �±׿��� price��� ���� �ʿ��մϴ�. ���� 100, 80, 50 �Դϴ�.
+//�׸��� �ش� price�� ��ȯ�ϴ� getPrice()�� �����ϼ���.
 enum Tag{
-	//여기에 코드를 작성하세요.
+	//���⿡ �ڵ带 �ۼ��ϼ���.
 }
