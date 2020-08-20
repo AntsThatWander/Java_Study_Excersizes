@@ -39,13 +39,13 @@ class Storage{
 	//재료를 인자로 받은 후, int 가치를 계산하여 저장하는 메소드입니다.
 	//Red, Blue, Green만 받습니다.
 	public void store(Ingredient i) {
-		if(i instanceof Red || i instanceof Blue || i instanceof Green) {
-			if(i instanceof Processable) {
-				process((Processable)i);
-			}
-			else {
-				addStock(i.getResource());
-			}
+		try{
+			if(!(i instanceof Red) && !(i instanceof Blue) && !(i instanceof Green)) throw new IllegalArgumentException("Wrong Ingredient.");
+			if(i instanceof Processable) process((Processable)i);
+			else addStock(i.getResource());
+
+		}catch(IllegalArgumentException e){
+			System.out.println(e.getMessage());
 		}
 	}
 	
