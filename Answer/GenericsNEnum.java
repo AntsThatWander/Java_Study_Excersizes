@@ -6,18 +6,18 @@ public class GenericsNEnum {
 	public static void main(String[] args) {
 		Glass glass = new Glass();
 		Box<Glass> glassBox = new Box<Glass>(glass);
-		System.out.println(glassBox.tagName());
-		System.out.println(glassBox.getPrice());
+		System.out.println(glassBox.tagName());//FRAGILE
+		System.out.println(glassBox.getPrice());//3100
 		
 		Figure figure = new Figure();
 		Box<Figure> figureBox = new Box<Figure>(figure);
-		System.out.println(figureBox.tagName());
-		System.out.println(figureBox.getPrice());
+		System.out.println(figureBox.tagName());//SIDE
+		System.out.println(figureBox.getPrice());//2550
 		
 		Food food= new Food();
 		Box<Food> foodBox = new Box<Food>(food);
-		System.out.println(foodBox.tagName());
-		System.out.println(foodBox.getPrice());
+		System.out.println(foodBox.tagName());//QUICK
+		System.out.println(foodBox.getPrice());//1580
 
 	}
 
